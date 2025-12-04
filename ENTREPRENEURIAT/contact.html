@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women for Women — Contact</title>
+<script>
+tailwind = {
+  darkMode: 'class',
+  config: {
+    theme: {
+      extend: {
+        colors: {
+          cream:'#FFF7F0',
+          rose:{50:'#fff5f6',100:'#ffeef0',200:'#ffd6db',500:'#db0f47',600:'#b30b3a'},
+          purple:{50:'#f5f0ff',500:'#7f3fbf'}
+        }
+      }
+    }
+  }
+};
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-rose-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-500">
+
+<!-- Header -->
+<!-- Header -->
+<header class="bg-rose-100 dark:bg-gray-800 shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-rose-300 to-rose-500 flex items-center justify-center text-white font-bold shadow-soft">W</div>
+      <div class="font-display font-semibold">Women for Women</div>
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="index.html" class="hover:text-rose-600">Home</a>
+      <a href="services.html" class="hover:text-rose-600">Services</a>
+      <a href="about.html" class="hover:text-rose-600">About</a>
+      <a href="portfolio.html" class="hover:text-rose-600">Portfolio</a>
+      <a href="contact.html" class="hover:text-rose-600">Contact</a>
+    </nav>
+
+    <!-- Switch Buttons -->
+    <div class="flex items-center gap-2">
+      <button id="darkModeToggle" class="px-3 py-2 rounded-md bg-rose-500 text-white text-sm">Dark Mode</button>
+      <button id="langToggle" class="px-3 py-2 rounded-md bg-purple-500 text-white text-sm">AR/EN</button>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileToggle" class="md:hidden p-2 border rounded-md">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-rose-50 dark:bg-gray-800 px-6 py-4 space-y-2">
+    <a href="index.html" class="block">Home</a>
+    <a href="services.html" class="block">Services</a>
+    <a href="about.html" class="block">About</a>
+    <a href="portfolio.html" class="block">Portfolio</a>
+    <a href="contact.html" class="block">Contact</a>
+  </div>
+</header>
+
+
+<!-- Contact Form -->
+<main class="max-w-3xl mx-auto px-6 py-16">
+<h1 class="text-3xl font-semibold">Contact us</h1>
+<p class="mt-2 text-gray-700 dark:text-gray-300">Questions, partnership enquiries or support — send us a message.</p>
+
+<form id="contactFormPage" class="mt-6 space-y-4 bg-rose-50 dark:bg-gray-800 p-6 rounded-2xl shadow-soft">
+<input name="name" type="text" placeholder="Full name" required class="w-full rounded-md border px-3 py-2 bg-white dark:bg-gray-700"/>
+<input name="email" type="email" placeholder="Email" required class="w-full rounded-md border px-3 py-2 bg-white dark:bg-gray-700"/>
+<input name="phone" placeholder="Phone" class="w-full rounded-md border px-3 py-2 bg-white dark:bg-gray-700"/>
+<textarea name="message" rows="5" placeholder="How can we help?" class="w-full rounded-md border px-3 py-2 bg-white dark:bg-gray-700"></textarea>
+<div class="flex items-center justify-between">
+<button type="submit" class="px-4 py-2 rounded-md bg-rose-500 text-white">Send message</button>
+<div class="text-sm text-gray-500 dark:text-gray-400">We reply within 8-24 hours</div>
+</div>
+</form>
+</main>
+
+<!-- Footer -->
+<footer class="bg-rose-100 dark:bg-gray-800 py-12 border-t mt-16 text-gray-700 dark:text-gray-300">
+<div class="max-w-6xl mx-auto px-6 text-center text-sm">
+  © <span id="year_contact"></span> Women for Women
+</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

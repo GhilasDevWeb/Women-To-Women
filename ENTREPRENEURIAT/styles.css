@@ -1,0 +1,15 @@
+:root{
+  --accent:#db0f47;
+  --cream:#FFF7F0;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+body{font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+h1,h2,h3,h4,h5,h6{font-family:'Playfair Display', serif;}
+
+/* Shadows */
+.shadow-soft{box-shadow:0 8px 30px rgba(16,24,40,0.06);}
+
+/* Responsive Helpers */
+@media (max-width:640px){.hide-sm{display:none}}

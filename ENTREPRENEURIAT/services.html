@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women for Women — Services</title>
+<script>
+tailwind = {
+  darkMode: 'class',
+  config: {
+    theme: {
+      extend: {
+        colors: {
+          cream:'#FFF7F0',
+          rose: {50:'#fff5f6',100:'#ffeef0',200:'#ffd6db',500:'#db0f47',600:'#b30b3a'},
+          purple:{50:'#f5f0ff',500:'#7f3fbf'}
+        },
+        boxShadow: { soft:'0 8px 30px rgba(16,24,40,0.06)' }
+      }
+    }
+  }
+};
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-rose-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+<!-- Header -->
+<!-- Header -->
+<header class="bg-rose-100 dark:bg-gray-800 shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-rose-300 to-rose-500 flex items-center justify-center text-white font-bold shadow-soft">W</div>
+      <div class="font-display font-semibold">Women for Women</div>
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="index.html" class="hover:text-rose-600">Home</a>
+      <a href="services.html" class="hover:text-rose-600">Services</a>
+      <a href="about.html" class="hover:text-rose-600">About</a>
+      <a href="portfolio.html" class="hover:text-rose-600">Portfolio</a>
+      <a href="contact.html" class="hover:text-rose-600">Contact</a>
+    </nav>
+
+    <!-- Switch Buttons -->
+    <div class="flex items-center gap-2">
+      <button id="darkModeToggle" class="px-3 py-2 rounded-md bg-rose-500 text-white text-sm">Dark Mode</button>
+      <button id="langToggle" class="px-3 py-2 rounded-md bg-purple-500 text-white text-sm">AR/EN</button>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileToggle" class="md:hidden p-2 border rounded-md">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-rose-50 dark:bg-gray-800 px-6 py-4 space-y-2">
+    <a href="index.html" class="block">Home</a>
+    <a href="services.html" class="block">Services</a>
+    <a href="about.html" class="block">About</a>
+    <a href="portfolio.html" class="block">Portfolio</a>
+    <a href="contact.html" class="block">Contact</a>
+  </div>
+</header>
+
+
+<!-- Services Section -->
+<main class="max-w-6xl mx-auto px-6 py-16">
+  <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">Our Services</h1>
+  <p class="text-gray-700 dark:text-gray-300 mb-12 text-lg">Explore our professional women-powered services. Book any service easily and safely.</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Beauty & Care -->
+    <article class="bg-rose-100 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+      <img src="images/makeup.jpg" alt="Makeup" class="w-full h-40 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold">Makeup / ميك أب</h3>
+        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Professional makeup at home for any occasion.</p>
+        <div class="mt-4 flex items-center justify-between text-sm">
+          <div class="text-rose-600 font-semibold">From $30</div>
+          <a href="contact.html?service=Makeup" class="px-3 py-2 rounded-md border text-sm">Request</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="bg-rose-100 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+      <img src="images/index.jpg" alt="Haircut" class="w-full h-40 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold">Haircut & Styling / حلاقة وتصفيف</h3>
+        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Haircuts, styling, and coloring at your home.</p>
+        <div class="mt-4 flex items-center justify-between text-sm">
+          <div class="text-rose-600 font-semibold">From $25</div>
+          <a href="contact.html?service=Haircut" class="px-3 py-2 rounded-md border text-sm">Request</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="bg-rose-100 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+      <img src="images/medcine.jpg" alt="Gynecologist" class="w-full h-40 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold">Gynecologist / طبيبة نساء</h3>
+        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Certified gynecologist visiting your home for consultations.</p>
+        <div class="mt-4 flex items-center justify-between text-sm">
+          <div class="text-rose-600 font-semibold">From $50</div>
+          <a href="contact.html?service=Gynecologist" class="px-3 py-2 rounded-md border text-sm">Request</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="bg-rose-100 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+      <img src="images/generalist.avif" alt="General Doctor" class="w-full h-40 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold">General Practitioner / طبيبة عامة</h3>
+        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Book a home visit with a licensed general doctor.</p>
+        <div class="mt-4 flex items-center justify-between text-sm">
+          <div class="text-rose-600 font-semibold">From $45</div>
+          <a href="contact.html?service=General+Doctor" class="px-3 py-2 rounded-md border text-sm">Request</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="bg-rose-100 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+      <img src="images/tandif.webp" alt="Cleaning" class="w-full h-40 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold">Cleaning & Organization / تنظيف وتنظيم</h3>
+        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Deep cleaning, wardrobe organization, and daily helpers.</p>
+        <div class="mt-4 flex items-center justify-between text-sm">
+          <div class="text-rose-600 font-semibold">From $20</div>
+          <a href="contact.html?service=Cleaning" class="px-3 py-2 rounded-md border text-sm">Request</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="bg-rose-100 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+      <img src="images/yoga.avif" alt="Yoga" class="w-full h-40 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold">Yoga & Fitness / يوغا ولياقة</h3>
+        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">Yoga, pilates, and personal fitness sessions at home.</p>
+        <div class="mt-4 flex items-center justify-between text-sm">
+          <div class="text-rose-600 font-semibold">From $22</div>
+          <a href="contact.html?service=Yoga" class="px-3 py-2 rounded-md border text-sm">Request</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- يمكنك إضافة المزيد من الخدمات بنفس الطريقة -->
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-rose-100 dark:bg-gray-800 py-12 border-t mt-16">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 dark:text-gray-300">
+    <div>
+      <h4 class="font-semibold text-xl mb-2">Women for Women</h4>
+      <p>Empowering women professionals. Delivering trusted home services to families and businesses.</p>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-2">Quick Links</h5>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-rose-600">Home</a></li>
+        <li><a href="services.html" class="font-semibold hover:text-rose-600">Services</a></li>
+        <li><a href="portfolio.html" class="hover:text-rose-600">Portfolio</a></li>
+        <li><a href="contact.html" class="hover:text-rose-600">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-2">Contact</h5>
+      <p>hello@womenforwomen.example</p>
+    </div>
+  </div>
+  <div class="border-t mt-8 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    © <span id="year2"></span> Women for Women
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

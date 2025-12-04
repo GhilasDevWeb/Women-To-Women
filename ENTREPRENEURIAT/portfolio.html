@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women for Women — Portfolio</title>
+<script>
+tailwind = {
+  darkMode: 'class',
+  config: {
+    theme: {
+      extend: {
+        colors: {
+          cream:'#FFF7F0',
+          rose:{50:'#fff5f6',100:'#ffeef0',200:'#ffd6db',500:'#db0f47',600:'#b30b3a'},
+          purple:{50:'#f5f0ff',500:'#7f3fbf'}
+        },
+        boxShadow:{soft:'0 8px 30px rgba(16,24,40,0.06)'}
+      }
+    }
+  }
+};
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-rose-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-500">
+
+<!-- Header -->
+<!-- Header -->
+<header class="bg-rose-100 dark:bg-gray-800 shadow-md sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-rose-300 to-rose-500 flex items-center justify-center text-white font-bold shadow-soft">W</div>
+      <div class="font-display font-semibold">Women for Women</div>
+    </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="index.html" class="hover:text-rose-600">Home</a>
+      <a href="services.html" class="hover:text-rose-600">Services</a>
+      <a href="about.html" class="hover:text-rose-600">About</a>
+      <a href="portfolio.html" class="hover:text-rose-600">Portfolio</a>
+      <a href="contact.html" class="hover:text-rose-600">Contact</a>
+    </nav>
+
+    <!-- Switch Buttons -->
+    <div class="flex items-center gap-2">
+      <button id="darkModeToggle" class="px-3 py-2 rounded-md bg-rose-500 text-white text-sm">Dark Mode</button>
+      <button id="langToggle" class="px-3 py-2 rounded-md bg-purple-500 text-white text-sm">AR/EN</button>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileToggle" class="md:hidden p-2 border rounded-md">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-rose-50 dark:bg-gray-800 px-6 py-4 space-y-2">
+    <a href="index.html" class="block">Home</a>
+    <a href="services.html" class="block">Services</a>
+    <a href="about.html" class="block">About</a>
+    <a href="portfolio.html" class="block">Portfolio</a>
+    <a href="contact.html" class="block">Contact</a>
+  </div>
+</header>
+
+
+<!-- Hero Section -->
+<section class="max-w-6xl mx-auto px-6 py-20 text-center">
+  <h1 class="text-5xl font-display font-bold mb-6">Our Portfolio</h1>
+  <p class="text-lg text-gray-700 dark:text-gray-300">A showcase of women professionals’ work across various services.</p>
+</section>
+
+<!-- Portfolio Grid -->
+<section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="bg-rose-50 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+    <img src="images/makeup.jpg" alt="Makeup Work" class="w-full h-64 object-cover">
+    <div class="p-4">
+      <h3 class="font-semibold text-lg">Makeup & Beauty</h3>
+      <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">Professional makeup services showcased from client sessions.</p>
+    </div>
+  </div>
+  <div class="bg-rose-50 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+    <img src="images/hair stailing.webp" alt="Hair Styling" class="w-full h-64 object-cover">
+    <div class="p-4">
+      <h3 class="font-semibold text-lg">Hair Styling</h3>
+      <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">Creative haircuts, coloring, and styling done by our professionals.</p>
+    </div>
+  </div>
+  <div class="bg-rose-50 dark:bg-gray-800 rounded-2xl shadow-soft overflow-hidden">
+    <img src="images/fitness.webp" alt="Wellness & Fitness" class="w-full h-64 object-cover">
+    <div class="p-4">
+      <h3 class="font-semibold text-lg">Wellness & Fitness</h3>
+      <p class="text-sm text-gray-700 dark:text-gray-300 mt-1">Yoga and holistic wellness sessions delivered at home.</p>
+    </div>
+  </div>
+  <!-- Add more portfolio cards similarly -->
+</section>
+
+<!-- Footer -->
+<footer class="bg-rose-100 dark:bg-gray-800 py-12 border-t mt-16">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 dark:text-gray-300">
+    <div>
+      <h4 class="font-semibold text-xl mb-2">Women for Women</h4>
+      <p>Empowering women professionals. Delivering trusted home services to families and businesses.</p>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-2">Quick Links</h5>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-rose-600 font-semibold">Home</a></li>
+        <li><a href="services.html" class="hover:text-rose-600">Services</a></li>
+        <li><a href="about.html" class="hover:text-rose-600">About</a></li>
+        <li><a href="contact.html" class="hover:text-rose-600">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="font-semibold mb-2">Contact</h5>
+      <p>hello@womenforwomen.example</p>
+    </div>
+  </div>
+  <div class="border-t mt-8 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    © <span id="year_portfolio"></span> Women for Women
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+  document.getElementById('darkModeToggle')?.addEventListener('click', ()=>{
+    document.documentElement.classList.toggle('dark');
+  });
+  document.getElementById('langToggle')?.addEventListener('click', ()=>{
+    alert('Language switcher will be implemented here.');
+  });
+</script>
+</body>
+</html>
